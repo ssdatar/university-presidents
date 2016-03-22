@@ -29,6 +29,8 @@ function draw (error, data)	{
 		return b.count - a.count;
 	});
 
+	console.log(data);
+
 	//Draw grid for universities that have had female presidents
 	var female_cells = grid_female.selectAll('.univ-female')
 			.data(data.filter( function(d) 
