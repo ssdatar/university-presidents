@@ -2,6 +2,7 @@
 <html>
 	<head>
 		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1"> 
 		<script src="//d3js.org/d3.v3.min.js"></script>
 		
 		<!--Main stylesheet-->
@@ -12,15 +13,82 @@
 	</head>
 
 	<body>
-		<!--Universities with female leaders -->
-		<h1>Universities with female presidents</h1>
-		<h4> These universities have had female presidents or chancellors in the past </h3>	
-		<div id="grid-female"></div>
+		<h1>Gender Diversity of Leaders of <br> U.S. Universities </h1>
+		
+		<article class="article">
 
-		<!--Universities with no female leaders -->
-		<h1> Universities with no female leaders</h1>
-		<h4> These universities have never had female leaders at the helm.</h3>	
-		<div id="grid-male"></div>
+			<p>This analysis looks into how many of the top 50 universities, as ranked by <a href="http://colleges.usnews.rankingsandreviews.com/best-colleges/rankings/national-universities/data">US News & World Report</a>, have had female leaders (presidents, chancellors, etc).</p>
+
+			<p><span class="emphasis">Less than half</span> of the country's top universities and colleges have had women leading them, our analysis shows.</p> 
+			
+			<section class="highlights">
+				<div class="highlights">
+					<div class="stat">
+						<p><span class="big">19</span></p> 
+						<p class="subtext">out of 50 institutions have had women leaders.</p>
+					</div>
+
+					<div class="stat">
+						<p><span class="big"> 6</span></p>
+						<p class="subtext">of the top 10 institutions have had - or currently have - women leaders.</p>
+					</div>
+
+					<div class="stat">
+						<p><span class="big"> 7</span></p>
+						<p class="subtext">institutions are currently led by women.</p>
+					</div>
+				</div>
+			</section>
+
+			<section class="text">
+				<p><span class="emphasis">University of Wisconsin-Madison</span>, <span class="emphasis">University of Pennsylvania</span>, and <span class="emphasis">Brown University</span> have each had three female presidents.</p>
+
+				<p><span class="emphasis">Yale University</span> was the first university in the list to have a female president - <strong>Hanna Holborn Gray</strong> - though she was the acting president for a year.</p>
+
+				<p>Gray then went on to become a full-time president at the <span class="emphasis">University of Chicago</span>.</p>
+
+				<ul> These universities currently have a female president:
+				  <strong>
+					<li>University of Wisconsin-Madison</li>
+					<li>University of Pennsylvania</li>
+					<li>Brown University</li>
+					<li>Rensselaer Polytechnic Institute</li>
+					<li>Case Western Reserve University</li>
+					<li>University of California-Davis</li>
+					<li>University of Virginia</li>
+				  </strong>
+				</ul>
+			</section>			
+
+			<section class="grids">
+			<!--Universities with female leaders -->
+				<h3>Universities with female presidents</h3>
+				<p> These universities have had female presidents or chancellors in the past </p>	
+				<div id="grid-female"></div>
+
+				<!--Universities with no female leaders -->
+				<h3> Universities with no female leaders</h3>
+				<p> These universities have never had female leaders at the helm.</p>	
+				<div id="grid-male"></div>
+			</section>
+
+
+			<section class="notes">
+				<h3>How it was done:</h3>
+				<p>A list of all the university presidents was compiled from the university websites. These include interim presidents and acting presidents. There were cases in which interim presidents were not mentioned on the university website but was seen elsewhere (Wikipedia). These names were not included (in any case, they were mostly men).</p>
+
+				<p>Cleaning was done in Python and the data was analyzed for gender by comparing the names with the <a href="https://www.ssa.gov/oact/babynames/limits.html">baby names database</a> released by the Social Security administration.</p>
+
+				<p> Some older names didn't turn up on the list, so their gender was manually entered.</p>
+				
+				<p><strong>All images are owned by the respective universities and have been used only for visual representation. They have been sourced from the Wikipedia pages. No copyright infringement is intended.</strong></p>
+
+				<p>Visualization was done with d3.js</p>
+
+				<p> You can take a look at the code on the projects' <a href="https://github.com/ssdatar/university-presidents">Github repo</a>.</p>
+			</section>
+		</article>
+
 
 		<script src="script.js"></script>
 	</body>
