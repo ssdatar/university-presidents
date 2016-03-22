@@ -1,0 +1,51 @@
+university,female_pres,count
+University of Wisconsin-Madison,y,3
+Rensselaer Polytechnic Institute,y,1
+Brown University,y,3
+University of California-Santa Barbara,y,1
+Case Western Reserve University,y,1
+University of California-Davis,y,1
+University of Pennsylvania,y,3
+Duke University,y,1
+Massachusetts Institute of Technology,y,1
+University of Virginia,y,2
+University of Chicago,y,1
+University of Michigan Ann-Arbor,y,1
+University of California-Irvine,y,1
+Yale University,y,1
+University of California-San Diego,y,1
+Princeton University,y,1
+Georgia Institute of Technology,y,1
+Cornell University,y,1
+Lehigh University,y,1
+Brandeis University,y,1
+Northwestern University,n,0
+Boston University,n,0
+Boston College,n,0
+Johns Hopkins University,n,0
+Tufts University,n,0
+Vanderbilt University,n,0
+New York University,n,0
+Harvard University,n,0
+University of Rochester,n,0
+Rice University,n,0
+Wake Forest University,n,0
+University of North Carolina-Chapel Hill,n,0
+University of Illinois Urbana-Champaign,n,0
+California Institute of Technology,n,0
+Washington University in St. Louis,n,0
+Carnegie Mellon University,n,0
+University of California-Berkeley,n,0
+Dartmouth College,n,0
+University of Southern California,n,0
+University of Florida,n,0
+Stanford University,n,0
+College of William and Mary,n,0
+Pennsylvania State University,n,0
+Georgetown University,n,0
+Emory University,n,0
+University of California-Los Angeles,n,0
+University of Notre Dame,n,0
+Northeastern University,n,0
+Columbia University,n,0
+Tulane University,n,0
