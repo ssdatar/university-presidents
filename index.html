@@ -3,9 +3,6 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1"> 
-		
-		<!--d3 script-->
-		<script src="//d3js.org/d3.v3.min.js"></script>
 
 		<!--Google font Lato-->
         <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
@@ -13,6 +10,14 @@
         <!--Main stylesheet-->
 		<link rel="stylesheet" type="text/css" href="style.css" />
 
+        <script src="https://code.jquery.com/jquery-2.2.2.min.js" integrity="sha256-36cp2Co+/62rEAAYHLmRCPIych47CvdM+uTBJwSzWjI=" crossorigin="anonymous"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.2/isotope.pkgd.min.js"></script>
+
+        <!--d3 script-->
+		<script src="//d3js.org/d3.v3.min.js"></script>
+		<!--script src="http://d3js.org/queue.v1.min.js"></script-->
+        
         <title>Gender Diversity Among University Leaders</title>
 	</head>
 
@@ -23,56 +28,55 @@
 
 			<p>This analysis looks into how many of the top 50 universities, as ranked by <a href="http://colleges.usnews.rankingsandreviews.com/best-colleges/rankings/national-universities/data">US News & World Report</a>, have had female leaders (presidents, chancellors, etc).</p>
 
-			<p><span class="emphasis">Less than half</span> of the country's top universities and colleges have had women leading them, our analysis shows.</p> 
-			
-			
+			<p><span class="emphasis">Less than half</span> of the country's top universities and colleges have had women leading them, our analysis shows.</p>			
 
 			<section class="text">
-				<p><span class="emphasis">University of Wisconsin-Madison</span>, <span class="emphasis">University of Pennsylvania</span>, and <span class="emphasis">Brown University</span> have each had three female presidents.</p>
+				<div class="text">
+					<p><span class="emphasis">University of Wisconsin-Madison</span>, <span class="emphasis">University of Pennsylvania</span>, and <span class="emphasis">Brown University</span> have each had three female presidents.</p>
 
-				<p><span class="emphasis">Yale University</span> was the first university in the list to have a female president - <strong>Hanna Holborn Gray</strong> - though she was the acting president for a year.</p>
+					<p><span class="emphasis">Yale University</span> was the first university in the list to have a female president - <strong>Hanna Holborn Gray</strong> - though she was the acting president for a year.</p>
 
-				<p>Gray then went on to become a full-time president at the <span class="emphasis">University of Chicago</span>.</p>
+					<p>Gray then went on to become a full-time president at the <span class="emphasis">University of Chicago</span>.</p>
 
-				<!-- <ul> These universities currently have a female president:
-				  <strong>
-					<li>University of Wisconsin-Madison</li>
-					<li>University of Pennsylvania</li>
-					<li>Brown University</li>
-					<li>Rensselaer Polytechnic Institute</li>
-					<li>Case Western Reserve University</li>
-					<li>University of California-Davis</li>
-					<li>University of Virginia</li>
-				  </strong>
-				</ul> -->
+					<!-- <ul> These universities currently have a female president:
+					  <strong>
+						<li>University of Wisconsin-Madison</li>
+						<li>University of Pennsylvania</li>
+						<li>Brown University</li>
+						<li>Rensselaer Polytechnic Institute</li>
+						<li>Case Western Reserve University</li>
+						<li>University of California-Davis</li>
+						<li>University of Virginia</li>
+					  </strong>
+					</ul> -->
+				</div>
+
+				<div id="sorts" class="button-group">
+				  <button class="button is-checked" data-sort-value="female">Female Presidents</button>
+				  <button class="button" data-sort-value="rank">U.S. News Rank</button>
+				</div>
+
+				<div>
+				 <ul class="table-like">
+					<li class="table-like__item header">
+						<div><strong>University</strong></div>
+						<div><strong>Number of Female Presidents</strong></div>
+						<div><strong>U.S. News & World Ranking</strong></div>
+					</li>
+				 </ul>
+				</div>		
 			</section>
 
-			<section class="table">
-				<ul class="table-like">
-					
-				</ul>
-				
-
-				<!-- <div id="univ-table" class="table">
-					<div class="row">
-						<div class="cell">University</div>
-						<div class="cell">Number of Female Presidents</div>
-						<div class="cell">U.S. News & World Ranking</div>
-					</div>
-				</div> -->				
-			</section>
-
-			<section class="grids">
-			<!--Universities with female leaders -->
+			<!--section class="grids">
 				<h3>Universities with female presidents</h3>
 				<p> These universities have had female presidents or chancellors in the past. Point your mouse on them to see how many. </p>	
 				<div id="grid-female"></div>
 
-				<!--Universities with no female leaders -->
+
 				<h3> Universities with no female leaders</h3>
 				<p> These universities have never had female leaders at the helm.</p>	
 				<div id="grid-male"></div>
-			</section>
+			</section-->
 
 			<section class="notes">
 				<h3>How it was done:</h3>
@@ -88,9 +92,8 @@
 
 				<p> You can take a look at the code on the projects' <a href="https://github.com/ssdatar/university-presidents">Github repo</a>.</p>
 			</section>
+			
 		</article>
-
-
 		<script src="script.js"></script>
 	</body>
 </html>
