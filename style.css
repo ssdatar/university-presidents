@@ -12,10 +12,10 @@ h1 {
   color: #AD2A1A;
 }
 
-section.text, section.grids, section.notes {
+/*section.text, section.grids, section.notes {
   float: right;
 }
-
+*/
 .highlights .stat {
   float: left;
   display: inline-block;
@@ -92,6 +92,42 @@ div.tooltip:after {
   top: 100%;
   left: 0;
 }
+
+
+.table-like {
+  background: #DDD;
+  max-width: 1200px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* clear fix */
+.table-like:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* ---- vertical table-like ---- */
+
+.table-like__item {
+  width: 100%;
+  clear: both;
+  border-top: 1px solid;
+}
+
+
+.table-like__item > * {
+  display: inline-block;
+  padding: 4px 4px;
+}
+
+.table-like__item .univ { width: 30%; }
+.table-like__item .female { width: 10%; }
+.table-like__item .rank { width: 15%; }
+
+
 
 @media (max-width: 767px) {
     /* phones */

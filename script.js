@@ -17,7 +17,8 @@ function wrangleFunction (d) {
 	return {
 		university: d.university,
 		female_pres: d.female_pres,
-		count: +d.count
+		count: +d.count,
+		us_ranking: +d.usnews_ranking
 	};
 }
 
@@ -29,7 +30,33 @@ function draw (error, data)	{
 		return b.count - a.count;
 	});
 
-	console.log(data);
+	//Select table, add rows to it
+	var table = d3.select('.table-like')
+	.selectAll('li')
+	.data(data)
+ .enter()
+	.append('li')
+	.classed('table-like__item', true)
+
+	//Add data to the table
+	table.call(makeTable);
+
+	function makeTable(parent) {
+		parent.append('div')
+		.classed('univ', true)
+		.classed('cell', true)
+		.text( function (d) { return d.university; })
+
+		parent.append('div')
+		.classed('female', true)
+		.classed('cell', true)
+		.text( function (d) { return d.count; });
+
+		parent.append('div')
+		.classed('rank', true)
+		.classed('cell', true)
+		.text( function (d) { return d.us_ranking; })
+	};	
 
 	//Draw grid for universities that have had female presidents
 	var female_cells = grid_female.selectAll('.univ-female')
