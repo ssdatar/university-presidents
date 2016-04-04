@@ -1,51 +1,51 @@
 university,female_pres,count,usnews_ranking
-Rensselaer Polytechnic Institute,y,1,42
-Case Western Reserve University,y,1,37
-Duke University,y,1,8
-Massachusetts Institute of Technology,y,1,7
-University of Wisconsin-Madison,y,3,46
-Cornell University,y,1,15
 Princeton University,y,1,1
-University of California-San Diego,y,1,40
-Yale University,y,1,3
-University of Michigan Ann-Arbor,y,1,29
-University of California-Irvine,y,1,39
-Lehigh University,y,1,47
-University of Pennsylvania,y,3,9
-University of California-Santa Barbara,y,1,38
-University of Virginia,y,1,26
-Brown University,y,3,14
-University of Chicago,y,1,6
-University of California-Davis,y,1,44
-Brandeis University,y,1,34
-New York University,n,0,32
-Boston University,n,0,41
-University of California-Los Angeles,n,0,24
-College of William and Mary,n,0,35
-University of Illinois Urbana-Champaign,n,0,45
-Emory University,n,0,21
-Boston College,n,0,30
-Stanford University,n,0,5
-Johns Hopkins University,n,0,11
-California Institute of Technology,n,0,10
-Tufts University,n,0,27
-Dartmouth College,n,0,12
-University of Notre Dame,n,0,19
-University of Florida,n,0,50
-Rice University,n,0,18
-Northwestern University,n,0,13
-Columbia University,n,0,4
-Vanderbilt University,n,0,16
-Carnegie Mellon University,n,0,23
-Georgia Institute of Technology,n,0,36
-University of Rochester,n,0,33
-University of California-Berkeley,n,0,20
-University of Southern California,n,0,25
-Georgetown University,n,0,22
 Harvard University,n,0,2
-Northeastern University,n,0,48
-Wake Forest University,n,0,28
-Tulane University,n,0,43
-University of North Carolina-Chapel Hill,n,0,31
-Pennsylvania State University,n,0,49
-Washington University in St. Louis,n,0,17
+Yale University,y,1,3
+Columbia University,n,0,4
+Stanford University,n,0,4
+University of Chicago,y,1,4
+Massachusetts Institute of Technology,y,1,7
+Duke University,y,1,8
+University of Pennsylvania,y,3,9
+California Institute of Technology,n,0,10
+Johns Hopkins University,n,0,10
+Dartmouth College,n,0,12
+Northwestern University,n,0,12
+Brown University,y,3,14
+Cornell University,y,1,15
+Vanderbilt University,n,0,15
+Washington University in St. Louis,n,0,15
+Rice University,n,0,18
+University of Notre Dame,n,0,18
+University of California-Berkeley,n,0,20
+Emory University,n,0,21
+Georgetown University,n,0,21
+Carnegie Mellon University,n,0,23
+University of California-Los Angeles,n,0,23
+University of Southern California,n,0,23
+University of Virginia,y,1,26
+Tufts University,n,0,27
+Wake Forest University,n,0,27
+University of Michigan Ann-Arbor,y,1,29
+Boston College,n,0,30
+University of North Carolina-Chapel Hill,n,0,30
+New York University,n,0,32
+University of Rochester,n,0,33
+Brandeis University,y,1,34
+College of William and Mary,n,0,34
+Georgia Institute of Technology,n,0,36
+Case Western Reserve University,y,1,37
+University of California-Santa Barbara,y,1,37
+University of California-Irvine,y,1,39
+University of California-San Diego,y,1,39
+Boston University,n,0,41
+Rensselaer Polytechnic Institute,y,1,41
+Tulane University,n,0,41
+University of California-Davis,y,1,41
+University of Illinois Urbana-Champaign,n,0,41
+University of Wisconsin-Madison,y,3,41
+Lehigh University,y,1,47
+Northeastern University,n,0,47
+Pennsylvania State University,n,0,47
+University of Florida,n,0,47

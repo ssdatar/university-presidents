@@ -22,13 +22,38 @@
 	</head>
 
 	<body>
-		<h1>Gender Diversity of Leaders of <br> U.S. Universities </h1>
+		<h1><span class="line">Gender Diversity of Leaders </span><span class="line"> of U.S. Universities </span></h1>
 		
 		<article class="article">
 
+			<p>University rankings are quite a common metric to judge which schools are the most prestigious - and the most difficult - to get into. These institutions are also doing a lot to increase the diversity of their student pool.</p>
+
+			<p>But how do the universities rank when it comes to gender diversity of people who head these schools?</p>
+
+			<p>What if they were ranked according to the gender diversity of their leaders?</p>
+
 			<p>This analysis looks into how many of the top 50 universities, as ranked by <a href="http://colleges.usnews.rankingsandreviews.com/best-colleges/rankings/national-universities/data">US News & World Report</a>, have had female leaders (presidents, chancellors, etc).</p>
 
-			<p><span class="emphasis">Less than half</span> of the country's top universities and colleges have had women leading them, our analysis shows.</p>			
+			<p><span class="emphasis">Less than half</span> of the country's top universities and colleges have had women leading them, our analysis shows.</p>
+
+			<section class="highlights">
+				<div class="highlights">
+					<div class="stat">
+						<p><span class="big">19</span></p> 
+						<p class="subtext">out of 50 institutions have had women leaders.</p>
+					</div>
+
+					<div class="stat">
+						<p><span class="big"> 6</span></p>
+						<p class="subtext">of the top 10 institutions have had - or currently have - women leaders.</p>
+					</div>
+
+					<div class="stat">
+						<p><span class="big"> 7</span></p>
+						<p class="subtext">institutions are currently led by women.</p>
+					</div>
+				</div>
+			</section>		
 
 			<section class="text">
 				<div class="text">
@@ -38,32 +63,23 @@
 
 					<p>Gray then went on to become a full-time president at the <span class="emphasis">University of Chicago</span>.</p>
 
-					<!-- <ul> These universities currently have a female president:
-					  <strong>
-						<li>University of Wisconsin-Madison</li>
-						<li>University of Pennsylvania</li>
-						<li>Brown University</li>
-						<li>Rensselaer Polytechnic Institute</li>
-						<li>Case Western Reserve University</li>
-						<li>University of California-Davis</li>
-						<li>University of Virginia</li>
-					  </strong>
-					</ul> -->
+					<p>Click on the buttons to toggle rankings. Please note that the U.S. News ranking denotes the position the university occupies on the table</p>
+
 				</div>
 
 				<div id="sorts" class="button-group">
-				  <button class="button is-checked" data-sort-value="female">Female Presidents</button>
-				  <button class="button" data-sort-value="rank">U.S. News Rank</button>
+				  <button class="button" data-sort-value="female">Female Presidents</button>
+				  <button class="button is-checked" data-sort-value="rank">U.S. News Rank</button>
 				</div>
 
-				<div>
-				 <ul class="table-like">
-					<li class="table-like__item header">
-						<div><strong>University</strong></div>
-						<div><strong>Number of Female Presidents</strong></div>
-						<div><strong>U.S. News & World Ranking</strong></div>
-					</li>
-				 </ul>
+				<div id="target">
+					<ul class="table-like">
+						<li class="table-like__item header">
+							<div id="univ-name"><strong>University</strong></div>
+							<div id="fem-p"><strong>Number of Female Presidents</strong></div>
+							<div id="us-r"><strong>U.S. News & World Ranking</strong></div>
+						</li>
+					</ul>
 				</div>		
 			</section>
 
@@ -82,18 +98,20 @@
 				<h3>How it was done:</h3>
 				<p>A list of all the university presidents was compiled from the university websites. These include interim presidents and acting presidents. There were cases in which interim presidents were not mentioned on the university website but was seen elsewhere (Wikipedia). These names were not included (in any case, they were mostly men).</p>
 
-				<p>Cleaning was done in Python and the data was analyzed for gender by comparing the names with the <a href="https://www.ssa.gov/oact/babynames/limits.html">baby names database</a> released by the Social Security administration.</p>
+				<p>Then, a master file of all the <a href="https://www.ssa.gov/oact/babynames/limits.html">baby names</a> registered with the Social Security administration was prepared by collating all the scraped data files provided on their website. Python was primarily used for this.</p>
+
+				<p>Data was analyzed for gender by comparing the names of university leaders to those in the prepared master file.</p>
 
 				<p> Some older names didn't turn up on the list, so their gender was manually entered.</p>
 				
 				<p><strong>All images are owned by the respective universities and have been used only for visual representation. They have been sourced from the Wikipedia pages. No copyright infringement is intended.</strong></p>
 
-				<p>Visualization was done with d3.js</p>
+				<p>Visualization was done with Isotope.js</p>
 
 				<p> You can take a look at the code on the projects' <a href="https://github.com/ssdatar/university-presidents">Github repo</a>.</p>
 			</section>
 			
 		</article>
-		<script src="script.js"></script>
+		<script src="test.js"></script>
 	</body>
 </html>

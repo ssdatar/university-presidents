@@ -1,3 +1,9 @@
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 body {
   color:#131516;
   margin: 40px auto;
@@ -12,9 +18,13 @@ h1 {
   color: #AD2A1A;
 }
 
-/*section.text, section.grids, section.notes {
+.line {
+  display: block;
+}
+
+section.text, section.grids, section.notes {
   float: right;
-}*/
+}
 
 .highlights .stat {
   float: left;
@@ -57,16 +67,23 @@ span.emphasis {
 }
 
 img {
-  width: 140px;
-  height: 140px;
+  width: 40px;
+  height: 40px;
+  padding-left: 50px;
+  padding-top: 8px;
+  z-index: 2;
 }
 
-h3,p {
+h3, p {
   margin-left: 10px;
 }
 
 h3 {
   color: #AD2A1A;
+}
+
+p {
+  font-size: 1.2em;
 }
 
 div.tooltip {
@@ -96,7 +113,7 @@ div.tooltip:after {
 
 
 .table-like {
-  background: #DDD;
+  background: #e9e9e9;
   max-width: 800px;
   list-style: none;
   margin: 0;
@@ -110,6 +127,18 @@ div.tooltip:after {
   clear: both;
 }
 
+#univ-name {
+  width: 30%;
+  text-align: center;
+  vertical-align: middle;
+}
+
+#us-r, #fem-p {
+  width: 25%;
+  text-align: center;
+  vertical-align: middle;
+}
+
 /* ---- vertical table-like ---- */
 
 .table-like__item {
@@ -118,27 +147,47 @@ div.tooltip:after {
   border-top: 1px solid;
 }
 
-
 .table-like__item > * {
   display: inline-block;
   padding: 4px 4px;
-  text-align: center;
 }
 
-.table-like__item .univ { width: 30%; }
-.table-like__item .female { width: 30%; }
-.table-like__item .rank { width: 30%; }
+.table-like__item .univ { 
+  width: 35%;
+  vertical-align: middle;
+  padding-left: 8px;
+  padding-bottom: 24px;
+}
+.table-like__item .female { 
+  width: 20%; 
+  text-align: center;
+  vertical-align: middle;
+  padding-bottom: 24px;
+}
+.table-like__item .rank { 
+  width: 20%;
+  text-align: center;
+  vertical-align: middle;
+  padding-bottom: 24px;
+}
+
+.table-like__item .logo { 
+  text-align: center;
+  display: inline;
+  width: 20%;
+  margin: 4px 4px;
+}
 
 .button {
   display: inline-block;
   padding: 0.5em 1.0em;
-  margin-bottom: 10px;
+  margin: 2em 2em;
   background: #EEE;
   border: none;
   border-radius: 7px;
   background-image: linear-gradient( to bottom, hsla(0, 0%, 0%, 0), hsla(0, 0%, 0%, 0.2) );
   color: #222;
-  font-family: sans-serif;
+  font-family: 'Lato';
   font-size: 16px;
   text-shadow: 0 1px white;
   cursor: pointer;
@@ -182,46 +231,49 @@ div.tooltip:after {
 .button-group .button:first-child { border-radius: 0.5em 0 0 0.5em; }
 .button-group .button:last-child { border-radius: 0 0.5em 0.5em 0; }
 
-
-
-
-@media (max-width: 767px) {
-    /* phones */
-
+@media screen and (max-width: 960px) {
     body {
-      color:#131516;
-      margin: 40px auto;
-      font-family: 'Lato', helvetica, sans-serif, arial;
-      background-color: #f9f9f9;
+      max-width: 700px;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    body {
+      max-width: 650px;
     }
 
     h1 {
-      text-align: center;
       font-size: 36px;
-      color: #AD2A1A;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    body {
+      max-width: 560px;
+    }
+    
+    .highlights .stat .big {
+      font-size: 2em;
+    }
+    
+    p.subtext {
+      font-size: 1em;
     }
 
-    #grid-female {
-      margin: 0 auto;
-     position: relative;
+    h1 {
+      font-size: 36px;
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    body {
+      margin: 28px auto;
+      max-width: 380px;
     }
 
-    div.univ-female, div.univ-male {
-      width: 300px;
-      height: 300px;
-      margin: 5px auto;
-      display: inline-block;
-      overflow: hidden;
-      position:relative;
-      -moz-border-radius: 5px;
-      -webkit-border-radius: 5px;
-      border-radius: 5px;
-      box-shadow: 2px 2px 2px #a3a3a3;
+    h1 {
+      font-size: 30px;
     }
-
-    img {
-      width: 200px;
-      height: 200px;
-    }
-
 }
