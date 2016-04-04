@@ -64,13 +64,13 @@ $(document).ready( function() {
 
      $.each(data, function (i, d) {
       var imgPath = 'logos/' + d.university + '.jpg'
-      var img = '<div class="logo">' + '<img src="' + imgPath + '" />' + '</div>';
+      var img = '<img class="logo" src="' + imgPath + '" />' + '</div>';
       var univDiv = '<div class="univ">' + d.university + '</div>';
       var countDiv = '<div class="female">' + d.count + '</div>';
       var rankDiv = '<div class="rank">' + d.usnews_ranking + '</div>';
       
       
-      var cells = univDiv + countDiv + rankDiv + img;
+      var cells = univDiv + img + countDiv + rankDiv;
 
       
       $('.table-like').append('<li class="table-like__item">' + cells + '</li>');

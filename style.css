@@ -48,7 +48,6 @@ section.text, section.grids, section.notes {
 }
 
 span.emphasis {
-  /*color: #093145;*/
   color: white;
   background-color: #093145;
 }
@@ -67,11 +66,9 @@ span.emphasis {
 }
 
 img {
-  width: 40px;
-  height: 40px;
-  padding-left: 50px;
-  padding-top: 8px;
-  z-index: 2;
+  width: 50px;
+  height: 50px;
+  margin: 16px 0 0 0;
 }
 
 h3, p {
@@ -133,10 +130,18 @@ div.tooltip:after {
   vertical-align: middle;
 }
 
-#us-r, #fem-p {
+#us-r {
   width: 25%;
   text-align: center;
   vertical-align: middle;
+  margin-left: 20px;
+}
+
+#fem-p {
+  width: 25%;
+  text-align: center;
+  vertical-align: middle;
+  margin-left: 80px;
 }
 
 /* ---- vertical table-like ---- */
@@ -166,17 +171,16 @@ div.tooltip:after {
 }
 .table-like__item .rank { 
   width: 20%;
-  text-align: center;
+  text-align: right;
   vertical-align: middle;
   padding-bottom: 24px;
 }
 
-.table-like__item .logo { 
+/*.table-like__item .logo { 
   text-align: center;
   display: inline;
-  width: 20%;
   margin: 4px 4px;
-}
+}*/
 
 .button {
   display: inline-block;
@@ -264,6 +268,14 @@ div.tooltip:after {
     h1 {
       font-size: 36px;
     }
+
+    #us-r {
+      margin-left: 0;
+    }
+
+    #fem-p {
+      margin-left: 80px;
+    }
 }
 
 
@@ -275,5 +287,18 @@ div.tooltip:after {
 
     h1 {
       font-size: 30px;
+    }
+
+    #fem-p {
+      margin-left: 40px;
+    }
+
+    img {
+      visibility: hidden;
+      display: none;
+    }
+
+    .table-like__item .rank {
+      text-align: center;
     }
 }
