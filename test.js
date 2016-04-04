@@ -8,6 +8,7 @@ $(document).ready( function() {
     error: function (err) { console.error(err); } 
   });
 
+  //Convert text dump into an array of objects
   function processData (res) {
     var dataLines = res.split(/\r\n|\n/);
     var headers = dataLines[0].split(',');
@@ -25,10 +26,10 @@ $(document).ready( function() {
             masterData.push(rowObj);
         }
     }
-    //console.log(masterData)
 
     renderTable(masterData); 
 
+    //http://isotope.metafizzy.co/layout-modes/vertical.html
     // init Isotope
     var $container = $('.table-like').isotope({
       layoutMode: 'vertical',
@@ -60,6 +61,7 @@ $(document).ready( function() {
     
   }
 
+  //Render the table from the csv data
   function renderTable(data) {
 
      $.each(data, function (i, d) {
@@ -70,7 +72,7 @@ $(document).ready( function() {
       var rankDiv = '<div class="rank">' + d.usnews_ranking + '</div>';
       
       
-      var cells = univDiv + img + countDiv + rankDiv;
+      var cells = img + univDiv + countDiv + rankDiv;
 
       
       $('.table-like').append('<li class="table-like__item">' + cells + '</li>');
