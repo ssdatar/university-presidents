@@ -48,8 +48,9 @@ section.text, section.grids, section.notes {
 }
 
 span.emphasis {
-  color: white;
-  background-color: #093145;
+/*  color: white;
+  background-color: #093145;*/
+  font-weight: bold;
 }
 
 .univ-female, .univ-male {
